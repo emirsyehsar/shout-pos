@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">shoutpos</string>
+    <string name="press_button">Press here</string>
+    <string name="press_button_toast">Button pressed</string>
 </resources>
