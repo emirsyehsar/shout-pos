@@ -2,4 +2,13 @@
     <string name="app_name">shoutpos</string>
     <string name="press_button">Press here</string>
     <string name="press_button_toast">Button pressed</string>
+    <string name="speech_status_listening">Listening…</string>
+    <string name="speech_error_no_match">Nothing recognised</string>
+    <string name="speech_error_permission">Microphone permission is required</string>
+    <string name="speech_error_network">Network unavailable for recognition</string>
+    <string name="speech_error_busy">Recognizer is busy</string>
+    <string name="speech_error_unavailable">Speech recognition unavailable on this device</string>
+    <string name="speech_status_downloading">Downloading Indonesian language model…</string>
+    <string name="speech_error_language_unsupported">Indonesian is not supported by this recognizer</string>
+    <string name="speech_error_generic">Recognition failed</string>
 </resources>
