@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "currency": "IDR",
+  "products": [
+    {
+      "id": "p01",
+      "name": "indomie goreng",
+      "price": 3500
+    },
+    {
+      "id": "p02",
+      "name": "indomie kari ayam",
+      "price": 3500
+    },
+    {
+      "id": "p03",
+      "name": "indomie ayam bawang",
+      "price": 3500
+    },
+    {
+      "id": "p04",
+      "name": "indomie rendang",
+      "price": 3500
+    },
+    {
+      "id": "p05",
+      "name": "mie sedap kari ayam",
+      "price": 3500
+    },
+    {
+      "id": "p06",
+      "name": "mie sedap goreng",
+      "price": 3500
+    },
+    {
+      "id": "p07",
+      "name": "gudang garam filter ketengan",
+      "price": 2500
+    },
+    {
+      "id": "p08",
+      "name": "gudang garam filter kotakan",
+      "price": 48000
+    },
+    {
+      "id": "p09",
+      "name": "gudang garam surya 16",
+      "price": 37000
+    },
+    {
+      "id": "p10",
+      "name": "gudang garam surya 12",
+      "price": 28000
+    },
+    {
+      "id": "p11",
+      "name": "teh botol kotak",
+      "price": 5000
+    },
+    {
+      "id": "p12",
+      "name": "teh botol",
+      "price": 5000
+    },
+    {
+      "id": "p13",
+      "name": "teh kotak",
+      "price": 5000
+    },
+    {
+      "id": "p14",
+      "name": "teh pucuk",
+      "price": 4000
+    },
+    {
+      "id": "p15",
+      "name": "pocari sweat kecil",
+      "price": 7000
+    },
+    {
+      "id": "p16",
+      "name": "pocari sweat besar",
+      "price": 8000
+    },
+    {
+      "id": "p17",
+      "name": "pocari sweat kaleng",
+      "price": 7000
+    },
+    {
+      "id": "p18",
+      "name": "racik nasi goreng",
+      "price": 2500
+    },
+    {
+      "id": "p19",
+      "name": "racik sayur asem",
+      "price": 2500
+    },
+    {
+      "id": "p20",
+      "name": "ultra milk coklat besar",
+      "price": 7500
+    },
+    {
+      "id": "p21",
+      "name": "ultra milk coklat kecil",
+      "price": 4000
+    }
+  ]
+}

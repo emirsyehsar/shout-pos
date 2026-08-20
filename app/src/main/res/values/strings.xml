@@ -3,6 +3,7 @@
     <string name="press_button">Press here</string>
     <string name="press_button_toast">Button pressed</string>
     <string name="speech_status_listening">Listening…</string>
+    <string name="speech_total">Total: %1$s</string>
     <string name="speech_error_no_match">Nothing recognised</string>
     <string name="speech_error_permission">Microphone permission is required</string>
     <string name="speech_error_network">Network unavailable for recognition</string>

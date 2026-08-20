@@ -49,7 +49,9 @@ class MainActivity : ComponentActivity() {
                     SpeechAPI(
                         appContext = applicationContext,
                         recognitionListener = SpeechRecognitionListener(),
-                        languageChecker = SpeechLanguageChecker(applicationContext)
+                        languageChecker = SpeechLanguageChecker(applicationContext),
+                        tokenizer = SpeechTokenizer(),
+                        model = SpeechModel(applicationContext)
                     )
                 )
             }
@@ -63,10 +65,12 @@ class MainActivity : ComponentActivity() {
             ShoutposTheme {
                 val speechText by speechViewModel.speechText.observeAsState("")
                 val statusRes by speechViewModel.statusRes.observeAsState(null)
+                val totalPrice by speechViewModel.totalPrice.observeAsState(null)
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     PressButtonScreen(
                         speechText = speechText,
                         statusRes = statusRes,
+                        totalPrice = totalPrice,
                         onPressStart = speechViewModel::onPressStart,
                         onPressEnd = speechViewModel::onPressEnd,
                         onPermissionDenied = speechViewModel::onPermissionDenied,
@@ -82,6 +86,7 @@ class MainActivity : ComponentActivity() {
 fun PressButtonScreen(
     speechText: String,
     statusRes: Int?,
+    totalPrice: String?,
     onPressStart: () -> Unit,
     onPressEnd: () -> Unit,
     onPermissionDenied: () -> Unit,
@@ -139,10 +144,21 @@ fun PressButtonScreen(
                 .padding(top = 16.dp)
                 .testTag(TAG_TXT_SPEECH)
         )
+        if (totalPrice != null) {
+            Text(
+                text = stringResource(R.string.speech_total, totalPrice),
+                style = MaterialTheme.typography.titleMedium,
+                textAlign = TextAlign.Center,
+                modifier = Modifier
+                    .padding(top = 12.dp)
+                    .testTag(TAG_TXT_TOTAL)
+            )
+        }
     }
 }
 
 const val TAG_TXT_SPEECH = "txt_speech"
+const val TAG_TXT_TOTAL = "txt_total"
 
 @Preview(showBackground = true)
 @Composable
@@ -151,6 +167,7 @@ fun PressButtonScreenPreview() {
         PressButtonScreen(
             speechText = "",
             statusRes = null,
+            totalPrice = null,
             onPressStart = {},
             onPressEnd = {},
             onPermissionDenied = {}
